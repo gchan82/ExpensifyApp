@@ -1,0 +1,36 @@
+DEPLOYMENT:
+git init
+git status
+(create .gitignore file in root directory)
+add "node_modules/" to .gitignore file.
+git add package.json
+git add . (adds files in directory & sub-directories)
+git commit -m "Initial commit"
+
+Re-commit
+git add . (adds files in directory & sub-directories)
+git commit -m "New update/changes"
+git log (shows all the commits & msgs)
+
+bash:
+ls -a ~/.ssh
+ssh-keygen -t rsa -b 4096 -C "agentgarychan@gmail.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/
+	for windows: "clip < ~/.ssh/id_rsa.pub"
+
+goto: github.com/settings/ssh/new
+paste in key
+
+go back to bash: ssh -T git@github.com (confirms your authenticated keys)
+
+go back to Repository - Expensify:
+click SSH. copy to clipboard.
+goto bash: git remote add origin (paste git code)
+git remote
+git remote -v
+git push -u origin master (u for upstream creates association with your code and github repo)
+
+
+

@@ -1,0 +1,14 @@
+webpack.js.org -> Guides -> Production
+			-> Configuration Types -> Exporting a Function
+
+package.json file:
+"scripts": {
+"build:dev": "webpack",
+"build:prod": "webpack -p --env production"
+}
+...
+devtool: isProduction ? 'source-map' : 'cheap-module-eval-source-map',
+	(note: source map will create a separate file for web dev tools ~5 mb rather than bundle with all other contents)
+
+yarn run build:prod
+
