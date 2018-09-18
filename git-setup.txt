@@ -14,6 +14,7 @@ Re-commit
 git add . (adds files in directory & sub-directories)
 git commit -m "New update/changes"
 git log (shows all the commits & msgs)
+git push
 
 bash:
 ls -a ~/.ssh

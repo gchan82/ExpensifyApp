@@ -24,3 +24,18 @@ bash: yarn add extract-text-webpack-plugin@3.0.0
 	(note: bunde 600kb, map 4mb, css 17kb)
 
 
+Production Server with Express:
+yarn add express@4.15.4
+add server/server.js file
+bash: node server/server.js (will get errors on localhost:3000)
+bash: yarn run build:prod (build production pack)
+bash: node server/server.js (re-run server, note: refresh doesn't work. add app.get line 8  of server.js...)
+
+
+Heroku
+heroku --version
+heroku login (*** cannot be run from bash *** use cmd line ***)
+heroku create expensify12380 (assigned: https://git.heroku.com/expensify12380.git)
+git remote
+git remote -v
+
