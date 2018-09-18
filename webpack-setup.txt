@@ -1,3 +1,6 @@
+yarn run build (you get 6 mb file)
+
+
 webpack.js.org -> Guides -> Production
 			-> Configuration Types -> Exporting a Function
 
@@ -6,9 +9,18 @@ package.json file:
 "build:dev": "webpack",
 "build:prod": "webpack -p --env production"
 }
+
+
+yarn run build:prod (you get 5 mb file, takes longer)
+
 ...
 devtool: isProduction ? 'source-map' : 'cheap-module-eval-source-map',
-	(note: source map will create a separate file for web dev tools ~5 mb rather than bundle with all other contents)
+	(note: bundle 600kb, map file 4mb)
 
 yarn run build:prod
+
+google: extract-text-webpack-plugin (for plugin)
+bash: yarn add extract-text-webpack-plugin@3.0.0
+	(note: bunde 600kb, map 4mb, css 17kb)
+
 
