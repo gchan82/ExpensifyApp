@@ -3,9 +3,12 @@ git init
 git status
 (create .gitignore file in root directory)
 add "node_modules/" to .gitignore file.
+add "misc/" to .gitignore file.
 git add package.json
 git add . (adds files in directory & sub-directories)
+git status
 git commit -m "Initial commit"
+git status
 
 Re-commit
 git add . (adds files in directory & sub-directories)
