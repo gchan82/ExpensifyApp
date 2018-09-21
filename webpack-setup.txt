@@ -32,10 +32,20 @@ bash: yarn run build:prod (build production pack)
 bash: node server/server.js (re-run server, note: refresh doesn't work. add app.get line 8  of server.js...)
 
 
+
+
+
 Heroku
 heroku --version
 heroku login (*** cannot be run from bash *** use cmd line ***)
 heroku create expensify12380 (assigned: https://git.heroku.com/expensify12380.git)
+*** try instead: git remote set-url heroku https://git.heroku.com/expensify12380.git/
 git remote
 git remote -v
+
+make updates to .gitignore, package.json files.
+push updates to git
+
+git push heroku master
+
 
